@@ -1,0 +1,120 @@
+[INFO][2016-05-01 02:54:53,401][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-01 02:54:53,555][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-01 02:54:53,602][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@d94a8b: startup date [Sun May 01 02:54:53 CST 2016]; root of context hierarchy
+[INFO][2016-05-01 02:54:53,702][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-01 02:54:53,718][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@172ed45: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,orderDao,stepDao,userDao,orderService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-01 02:54:53,802][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-01 02:54:53,903][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-01 02:54:54,156][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-01 02:54:54,164][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-01 02:54:54,164][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-01 02:54:54,164][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-01 02:54:54,442][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-01 02:54:54,539][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-01 02:54:54,542][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-01 02:54:54,720][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-01 02:54:54,720][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-01 02:54:54,720][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-01 02:54:54,742][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_order
+[INFO][2016-05-01 02:54:54,742][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [proc, completetime, scheduling, oid, completed, failed, starttime, postproc, userid, preproc]
+[INFO][2016-05-01 02:54:54,742][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:54:54,742][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:54:54,758][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_postproc
+[INFO][2016-05-01 02:54:54,758][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [completetime, finish, id, oid, starttime]
+[INFO][2016-05-01 02:54:54,758][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:54:54,758][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:54:54,758][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_preproc
+[INFO][2016-05-01 02:54:54,758][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [completetime, finish, id, oid, starttime]
+[INFO][2016-05-01 02:54:54,758][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:54:54,758][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:54:54,774][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_proc
+[INFO][2016-05-01 02:54:54,774][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [completetime, finish, id, oid, starttime]
+[INFO][2016-05-01 02:54:54,774][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:54:54,774][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:54:54,774][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_schedule
+[INFO][2016-05-01 02:54:54,774][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [completetime, finish, id, oid, starttime]
+[INFO][2016-05-01 02:54:54,774][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:54:54,774][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:54:54,789][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_user
+[INFO][2016-05-01 02:54:54,789][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [upassword, id, username]
+[INFO][2016-05-01 02:54:54,789][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:54:54,789][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:54:54,789][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-01 02:54:54,840][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-01 02:54:53",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:4058160, ConnectTime:"2016-05-01 02:54:54", UseCount:2, LastActiveTime:"2016-05-01 02:54:54"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-05-01 02:54:54,905][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@14c583e]; rollback [true]
+[WARN][2016-05-01 02:54:54,974][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 52.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-05-01 02:54:54,974][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 69.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2016-05-01 02:54:55,090][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Rolled back transaction after test execution for test context [TestContext@1ae47a0 testClass = UserDaoTest, testInstance = com.orderSys.dao.UserDaoTest@a9c4b0, testMethod = testIsExist@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5ec632 testClass = UserDaoTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2016-05-01 02:54:55,090][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@d94a8b: startup date [Sun May 01 02:54:53 CST 2016]; root of context hierarchy
+[INFO][2016-05-01 02:54:55,090][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@172ed45: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,orderDao,stepDao,userDao,orderService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-01 02:54:55,090][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-01 02:55:03,870][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-01 02:55:04,016][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-01 02:55:04,070][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@d94a8b: startup date [Sun May 01 02:55:04 CST 2016]; root of context hierarchy
+[INFO][2016-05-01 02:55:04,170][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-01 02:55:04,201][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@172ed45: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,orderDao,stepDao,userDao,orderService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-01 02:55:04,270][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-01 02:55:04,339][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-01 02:55:04,571][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-01 02:55:04,583][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-01 02:55:04,583][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-01 02:55:04,583][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-01 02:55:04,841][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-01 02:55:04,941][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-01 02:55:04,941][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-01 02:55:05,188][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-01 02:55:05,188][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-01 02:55:05,204][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_order
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [proc, completetime, scheduling, oid, completed, failed, starttime, postproc, userid, preproc]
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_postproc
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [completetime, finish, id, oid, starttime]
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_preproc
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [completetime, finish, id, oid, starttime]
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:55:05,220][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_proc
+[INFO][2016-05-01 02:55:05,235][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [completetime, finish, id, oid, starttime]
+[INFO][2016-05-01 02:55:05,235][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:55:05,235][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:55:05,239][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_schedule
+[INFO][2016-05-01 02:55:05,239][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [completetime, finish, id, oid, starttime]
+[INFO][2016-05-01 02:55:05,239][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:55:05,239][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:55:05,242][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: orderSys.t_user
+[INFO][2016-05-01 02:55:05,242][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [upassword, id, username]
+[INFO][2016-05-01 02:55:05,242][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-01 02:55:05,242][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-01 02:55:05,242][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-01 02:55:05,273][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-01 02:55:04",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:4058160, ConnectTime:"2016-05-01 02:55:04", UseCount:2, LastActiveTime:"2016-05-01 02:55:05"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-05-01 02:55:05,342][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@14c583e]; rollback [false]
+[INFO][2016-05-01 02:55:05,474][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@b9267b testClass = OrderDaoTest, testInstance = com.orderSys.dao.OrderDaoTest@8b35bf, testMethod = testFindOrder@OrderDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1ad44e3 testClass = OrderDaoTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2016-05-01 02:55:05,474][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@d94a8b: startup date [Sun May 01 02:55:04 CST 2016]; root of context hierarchy
+[INFO][2016-05-01 02:55:05,474][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@172ed45: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,orderDao,stepDao,userDao,orderService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-01 02:55:05,489][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed

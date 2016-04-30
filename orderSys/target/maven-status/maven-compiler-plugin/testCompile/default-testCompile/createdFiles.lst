@@ -1,0 +1,3 @@
+com\orderSys\service\UserServiceTest.class
+com\orderSys\dao\OrderDaoTest.class
+com\orderSys\dao\UserDaoTest.class
