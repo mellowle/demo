@@ -14,7 +14,6 @@ import com.orderSys.model.UserEntity;
 
 @ContextConfiguration(locations = {"classpath:spring.xml","classpath:spring-hibernate.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
-// defaultRollback=true不会改变数据库，false会改变数据库
 @TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = true)
 @Transactional
 public class UserDaoTest {
